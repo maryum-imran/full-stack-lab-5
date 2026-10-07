@@ -1,0 +1,63 @@
+
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+}
+
+#counter {
+    text-align: center;
+}
+
+.filters {
+    text-align: center;
+    margin: 15px;
+}
+
+li {
+    list-style: none;
+    background-color: #eee;
+    margin: 8px 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+li span {
+    flex: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+}

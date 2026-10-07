@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>My To-Do List</h1>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button type="submit">Add Task</button>
+    </form>
+
+    <p id="error"></p>
+
+    <h3 id="counter">Total: 0 | Remaining: 0</h3>
+
+    <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button id="clearCompleted">Clear Completed</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

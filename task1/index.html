@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration</h1>
+
+        <button id="darkBtn">Dark Mode</button>
+
+        <form id="regForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name">
+            <p class="error" id="nameError"></p>
+
+            <label>Email</label>
+            <input type="email" id="email">
+            <p class="error" id="emailError"></p>
+
+            <label>Program</label>
+            <select id="program">
+                <option value="">Select Program</option>
+                <option>Computer Science</option>
+                <option>Software Engineering</option>
+                <option>Information Technology</option>
+            </select>
+            <p class="error" id="programError"></p>
+
+            <label>Semester</label>
+            <input type="number" id="semester">
+            <p class="error" id="semesterError"></p>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <div class="card" id="previewCard">
+            <h2>Live Preview</h2>
+
+            <p><b>Name:</b> <span id="pName">-</span></p>
+            <p><b>Email:</b> <span id="pEmail">-</span></p>
+            <p><b>Program:</b> <span id="pProgram">-</span></p>
+            <p><b>Semester:</b> <span id="pSemester">-</span></p>
+        </div>
+
+        <h2>Registered Students</h2>
+
+        <ul id="studentList"></ul>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
